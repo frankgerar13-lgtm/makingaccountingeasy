@@ -569,13 +569,13 @@
             <div class="message bot">
                 <div class="message-avatar">AI</div>
                 <div>
-                    <div class="message-content">
+                    <div class="message-content flex justify-start">
                         👋 Hi there! Welcome to our site. How can we help you today?
                     </div>
-                    <div class="quick-replies">
-                        <button class="quick-reply-btn" onclick="sendQuickReply('I have a question about your services')">💼 I have a question about your services</button>
-                        <button class="quick-reply-btn" onclick="sendQuickReply('I need technical support')">🔧 I need technical support</button>
-                        <button class="quick-reply-btn" onclick="sendQuickReply('I want to learn more')">📚 I want to learn more</button>
+                    <div class="quick-replies flex justify-start">
+                        <button class="quick-reply-btn text-grey" onclick="sendQuickReply('I have a question about your services')">💼 I have a question about your services</button>
+                        <button class="quick-reply-btn text-grey" onclick="sendQuickReply('I need technical support')">🔧 I need technical support</button>
+                        <button class="quick-reply-btn text-grey" onclick="sendQuickReply('I want to learn more')">📚 I want to learn more</button>
                     </div>
                 </div>
             </div>
@@ -583,7 +583,7 @@
 
         <div class="chat-footer">
             <div class="chat-input-wrapper">
-                <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..." />
+                <input type="text" class="chat-input text-gray" id="chatInput" placeholder="Type your message..." />
                 <button class="send-btn" id="sendBtn">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
@@ -708,6 +708,7 @@
 	</body>
 
 </html>
+
 
 
 
