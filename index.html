@@ -255,6 +255,8 @@
             right: 24px;
             width: 60px;
             height: 60px;
+			min-width: 60px;
+            min-height: 60px;			
             border-radius: 50%;
             background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
             border: none;
@@ -265,6 +267,7 @@
             justify-content: center;
             transition: all 0.3s ease;
             z-index: 1000;
+			padding: 0;
         }
 
         .chat-button:hover {
@@ -498,6 +501,7 @@
             align-items: center;
             justify-content: center;
             transition: transform 0.2s ease;
+			flex-shrink: 0;
         }
 
         .send-btn:hover {
@@ -725,6 +729,7 @@
 	</body>
 
 </html>
+
 
 
 
