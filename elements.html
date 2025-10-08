@@ -51,7 +51,17 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+		body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(73, 191, 157, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+            pointer-events: none;
 
 
         .wrapper {
@@ -111,7 +121,7 @@
             padding: 0;
             position: relative;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.2);
             overflow: hidden;
             animation: fadeInUp 0.8s ease forwards;
             opacity: 0;
@@ -162,9 +172,9 @@
         }
 
         .pricing-card:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
-            border-color: rgba(255,255,255,0.8);
+            transform: translateY(-20px) scale(1.05);
+            box-shadow: 0 35px 70px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.4);
         }
 
         .pricing-card.featured {
@@ -296,7 +306,7 @@
 
         .description {
             text-align: center;
-            color: #666;
+            color: rgba(255,255,255,0.8);
             font-size: 0.95em;
             margin-top: 0.8em;
             min-height: 2.5em;
@@ -803,6 +813,7 @@
 	</body>
 
 </html>
+
 
 
 
